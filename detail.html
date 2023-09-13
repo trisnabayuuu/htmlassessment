@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style-detail.css">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="detailcontainer">
+        <section class="top">
+            <!-- <div class="backbutton">
+                <button type="button">backbutton</button>
+            </div> -->
+            <input style="margin-right: 1200px; width: 40px; height: 40px;" 
+            type="image" src="./src/Back Button.png" alt="Tombol Gambar" onclick="" />
+
+            <div class="topmodal">
+                <a type="button" class="topedit" data-bs-target="#myModal" data-bs-toggle="modal">Edit</a>
+                <a class="topdelete" type="button" data-bs-target="#myModal" data-bs-toggle="modal">Delete</a>
+            </div>
+            <!-- <div class="topmodal">
+                <h6>edit</h6>
+                <h6>delete</h6>
+            </div> -->
+            <!-- <input type="text" value="Klik Saya" onclick="alert('Tombol telah diklik!')" /> -->
+        </section>
+        <section class="bottom">
+            <div class="bottomtitle">
+
+                <div >
+                    <h1>DILAN 1990</h1>
+                    <h6>30 juni 2019</h6>
+                </div>
+                <div class="stock">
+                    <h5>Available</h5>
+                </div>
+            </div>
+            <p class="paragrafdilan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos consectetur commodi soluta cum esse delectus atque alias similique ipsam ullam excepturi, earum iusto. Architecto officia vitae odio totam exercitationem nulla adipisci possimus sequi enim harum modi itaque culpa, corrupti quibusdam in molestiae repudiandae aut, a numquam quod omnis! Enim odio, molestias illum fugiat cupiditate aperiam delectus! Illo vitae eum nesciunt necessitatibus officia ducimus? Officiis qui deleniti velit! Soluta optio aliquid iste pariatur, delectus est sint eligendi veniam dignissimos. Unde facilis blanditiis ea quam, laudantium qui doloremque dolor temporibus, molestias id minus, consectetur omnis natus! Enim pariatur necessitatibus asperiores incidunt.</p>
+            
+            
+            <div class="borrowmodal">
+
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Borrow
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Modal Heading</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body" >
+                                <div >
+                                    <label for="imagemodal">Url Image </label>
+                                    <input class="modal-input" type="url" placeholder="Url Image...">
+                                </div>
+                                <div>
+                                    <label for="titlemodal">Title </label>
+                                    <input class="modal-input" type="text" placeholder="Tile...">
+                                </div>
+                                <div>
+                                    <label for="descmodal">Description </label>
+                                    <input class="modal-input" type="text" placeholder="Description...">
+                                </div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Borrow</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
