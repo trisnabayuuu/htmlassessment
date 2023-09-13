@@ -11,55 +11,68 @@
     <!-- Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
+    <!-- font airbnb -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Airbnb+Cereal+App:wght@400;700&display=swap">
+
+    </head>
 
 <body>
+    
     <main class="containerrr">
         <section class="left">
             <h1 class="title1">Book is a window</h1>
             <h1 class="title2">to the world</h1>
         </section>
-
+        
         <section class="right">
+            
             <div class="card-login">
                 <h2 class="login-title">Login</h2>
                 <h6>welcome back, please login</h6>
                 <h6 class="gapform">to your account</h6>
                 <form class="form-container">
                     <div class="input-group">
-                        <label for="email">Email: </label>
+                        <label for="email">email address </label>
                     </div>
                     <div class="input-group">
-                        <input type="email">
+                        <input class="input-form" type="email">
                     </div>
                     <div class="input-group">
-                        <label for="pass">Password: </label>
+                        <label for="pass">password </label>
                     </div>
                     <div>
-
-                        <input type="password">
+                        <input class="input-form" type="password">
                     </div>
                 </form>
-                <div class="form-check" style="padding-bottom: 40px">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Remember Password
-                    </label>
-                    <a href="">Forget password</a>
-                </div>
+                    <div class="form-check" >
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Remember Password
+                        </label>
+                        </div>
+                        <div>
+                            <a href="">Forgot password</a>
+                        </div>
+                    </div>
                 <div class="">
-                    <button class="submitlogin">Login</button>
-                    <button class="submitsignUp">SignUp</button>
+                    <button class="submitlogin"  onclick="window.location.href='landing-page.html'">Login</button>
+                    <button class="submitsignUp" onclick="window.location.href='register.html'">SignUp</button>
                 </div>
             </div>
-        </section>
 
+            <div class="logo">
+                <img style="width: 50px; height: 54px;"
+                src="./src/logo.png" alt="logo">
+            </div>
+            
+        </section>
+        
         <section>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-</body>
+    </body>
 
 </html>

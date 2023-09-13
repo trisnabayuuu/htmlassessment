@@ -1,6 +1,8 @@
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+body { 
+  font-family: 'Airbnb Cereal App', sans-serif; 
+}
 
 .carousel {
   background: transparent;
@@ -69,7 +71,7 @@ body { font-family: sans-serif; }
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: grey;
 }
 .flickity-prev-next-button.no-svg {
   color: white;

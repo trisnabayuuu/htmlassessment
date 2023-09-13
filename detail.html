@@ -15,21 +15,15 @@
 <body>
     <main class="detailcontainer">
         <section class="top">
-            <!-- <div class="backbutton">
-                <button type="button">backbutton</button>
-            </div> -->
-            <input style="margin-right: 1200px; width: 40px; height: 40px;" 
-            type="image" src="./src/Back Button.png" alt="Tombol Gambar" onclick="" />
-
-            <div class="topmodal">
-                <a type="button" class="topedit" data-bs-target="#myModal" data-bs-toggle="modal">Edit</a>
-                <a class="topdelete" type="button" data-bs-target="#myModal" data-bs-toggle="modal">Delete</a>
+            <div class="topbutton">
+                    <input style=" width: 50px; height: 50px;" 
+                    type="image" src="./src/Back Button.png" alt="Tombol Gambar" onclick="window.location.href='landing-page.html'" />
             </div>
-            <!-- <div class="topmodal">
-                <h6>edit</h6>
-                <h6>delete</h6>
-            </div> -->
-            <!-- <input type="text" value="Klik Saya" onclick="alert('Tombol telah diklik!')" /> -->
+                
+            <div class="topmodal">
+                <a type="button" class="topedit" data-bs-target="#myModaledit" data-bs-toggle="modal">Edit</a>
+                <a class="topdelete" type="button" data-bs-target="#myModaldelete" data-bs-toggle="modal">Delete</a>
+            </div>
         </section>
         <section class="bottom">
             <div class="bottomtitle">
@@ -42,39 +36,106 @@
                     <h5>Available</h5>
                 </div>
             </div>
-            <p class="paragrafdilan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos consectetur commodi soluta cum esse delectus atque alias similique ipsam ullam excepturi, earum iusto. Architecto officia vitae odio totam exercitationem nulla adipisci possimus sequi enim harum modi itaque culpa, corrupti quibusdam in molestiae repudiandae aut, a numquam quod omnis! Enim odio, molestias illum fugiat cupiditate aperiam delectus! Illo vitae eum nesciunt necessitatibus officia ducimus? Officiis qui deleniti velit! Soluta optio aliquid iste pariatur, delectus est sint eligendi veniam dignissimos. Unde facilis blanditiis ea quam, laudantium qui doloremque dolor temporibus, molestias id minus, consectetur omnis natus! Enim pariatur necessitatibus asperiores incidunt.</p>
+            <p class="paragrafdilan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium odio asperiores aperiam minus id deleniti blanditiis quidem, quisquam quos placeat in sed dolorem distinctio qui ab magnam excepturi perferendis voluptatem. Quasi nobis cumque non iste dicta dolores voluptatem maxime in. Libero nam obcaecati nesciunt odit molestiae! Voluptatum quaerat assumenda officiis inventore nihil? Quod architecto dolorem nulla itaque laborum vel deleniti quas placeat amet quisquam eos, voluptatum non ullam. Suscipit laborum unde repellat. Dicta alias dolores explicabo molestiae esse placeat molestias unde eligendi temporibus aliquid magnam quos cum, velit id debitis. Quia atque nisi voluptatibus, itaque recusandae maiores rerum accusantium error.</p>
             
-            
-            <div class="borrowmodal">
+            <!-- modal delete -->
+            <div class="modal" id="myModaldelete">
+                <div class="modal-dialog">
+                    <div class="modal-content">
 
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Edit Data</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="imgdelete">
+                                <img src="./src/checked.png" alt="checked">
+                            </div>
+                            <div class="textdelete">
+                                <h6 >Data Dilan 1990 berhasil dihapus</h6>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal edit -->
+            <div class="modal" id="myModaledit">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Edit Data</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body" >
+                            <div class="form-group">
+                                <label for="imagemodal">Image </label>
+                                <input class="modal-input" type="url" placeholder="http://gambardilan.png">
+                            </div>
+                            <div class="form-group">
+                                <label for="titlemodal">Title </label>
+                                <input class="modal-input" type="text" placeholder="Dilan 1990">
+                            </div>
+                            <div class="form-group">
+                                <label for="descmodal">Description </label>
+                                <textarea class="modal-input " id="validationTextarea" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- The Modal borrow -->
+            <div class="borrowmodal">
+                <!-- float button -->
+                <div class="dropup position-absolute bottom-0 end-0 rounded-circle m-5">   
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">
                     Borrow
                 </button>
+                </div>
 
-                <!-- The Modal -->
+
                 <div class="modal" id="myModal">
                     <div class="modal-dialog">
                         <div class="modal-content">
 
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">Modal Heading</h4>
+                                <h4 class="modal-title">Borrow</h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
 
                             <!-- Modal body -->
                             <div class="modal-body" >
-                                <div >
-                                    <label for="imagemodal">Url Image </label>
+                                <div class="form-group">
+                                    <label for="imagemodal">Image </label>
                                     <input class="modal-input" type="url" placeholder="Url Image...">
                                 </div>
-                                <div>
+                                <div class="form-group">
                                     <label for="titlemodal">Title </label>
                                     <input class="modal-input" type="text" placeholder="Tile...">
                                 </div>
-                                <div>
+                                <div class="form-group">
                                     <label for="descmodal">Description </label>
-                                    <input class="modal-input" type="text" placeholder="Description...">
+                                    <textarea class="modal-input " id="validationTextarea" placeholder="Description..."></textarea>
                                 </div>
                             </div>
 
@@ -82,7 +143,6 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Borrow</button>
                             </div>
-
                         </div>
                     </div>
                 </div>

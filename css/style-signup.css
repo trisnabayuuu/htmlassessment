@@ -55,7 +55,7 @@
 input {
     outline: none;
     border: none;
-    border-bottom: 1px solid lightgray;
+    border-bottom: none;
 }
 
 .containerrr .right {
@@ -106,4 +106,20 @@ button.submitlogin {
 .submitlogin:hover{
         background-color: black;
         color: white;
+}
+
+a{
+    text-decoration: none ;
+    color: black;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.form-check{
+    display: flex !important;
+    justify-content: space-between;
+    padding-bottom: 40px
 }

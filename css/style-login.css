@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Airbnb Cereal App', sans-serif;
+}
 
 .containerrr {
-    background-color: rgb(247, 242, 242);
+    background-color: rgb(255, 255, 255);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -50,12 +53,16 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    width: 100% !important;
+}
+.input-form{
+    width: 100%;
 }
 
 input {
     outline: none;
     border: none;
-    border-bottom: 1px solid lightgray;
+    border-bottom: none;
 }
 
 .containerrr .right {
@@ -106,4 +113,23 @@ button.submitsignUp {
 .submitsignUp:hover{
         background-color: black;
         color: white;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+    justify-content: space-between !important;
+    /* kasih space supaya forget password ada di kanan */
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    
+}
+.form-check{
+    display: flex !important;
+    justify-content: space-between;
+    padding-bottom: 40px
 }
