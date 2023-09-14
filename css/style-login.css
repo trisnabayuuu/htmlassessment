@@ -119,7 +119,6 @@ a{
     text-decoration: none !important;
     color: black !important;
     justify-content: space-between !important;
-    /* kasih space supaya forget password ada di kanan */
 }
 .logo{
     position: absolute;

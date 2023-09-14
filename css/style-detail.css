@@ -107,9 +107,7 @@ a{
 }
 
 .imagedelete .textdelete{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+    display: flex;
     justify-items: center;
     align-items: center;
 }
