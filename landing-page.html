@@ -21,6 +21,10 @@
                 <div class="row">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <!-- sidebar -->
+                            <input class="btn" type="image" src="./src/sidebar.png" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></input>
+                            <!-- navbar -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -53,9 +57,8 @@
                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             </form>
                             <div class="logo" style="display: flex; align-items: center;">
-                                <img style="height: 54px; width: 50px;"
-                                src="./src/logo.png" alt="">
-    
+                                <img style="height: 54px; width: 50px;" src="./src/logo.png" alt="">
+
                                 <h5>Library</h5>
                             </div>
                         </ul>
@@ -64,6 +67,60 @@
                 </div>
             </div>
         </nav>
+        <!-- sidebar -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="isisidebar" style="display: flex; ">
+                
+                <div class="offcanvas-body">
+                    <img src="./src/niki.png" alt="niki">
+                    <h4>Nicky Zefanya</h4>
+                </div>
+                <div>
+                    <!-- <a >Edit</a> -->
+                    <a type="button" class="topedit" data-bs-target="#myModaladd" data-bs-toggle="modal">Add Book</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal add -->
+        <div class="modal" id="myModaladd">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit Data</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="imagemodal">Image </label>
+                            <input class="modal-input" type="url" placeholder="http://gambardilan.png">
+                        </div>
+                        <div class="form-group">
+                            <label for="titlemodal">Title </label>
+                            <input class="modal-input" type="text" placeholder="Dilan 1990">
+                        </div>
+                        <div class="form-group">
+                            <label for="descmodal">Description </label>
+                            <textarea class="modal-input " id="validationTextarea"
+                                placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- Flickity HTML init -->
@@ -73,38 +130,45 @@
                 <img src="./src/dilan.png" alt="dilan" onclick="window.location.href='detail.html'" />
             </div>
             <div class="carousel-cell">
-                <img src="./src/Laskar_pelangi_sampul.jpg" alt="submerged" onclick="window.location.href='detail.html'"/>
+                <img src="./src/Laskar_pelangi_sampul.jpg" alt="submerged"
+                    onclick="window.location.href='detail.html'" />
             </div>
             <div class="carousel-cell">
-                <img src="./src/poordad.jpg" alt="look-out" onclick="window.location.href='detail.html'"/>
+                <img src="./src/poordad.jpg" alt="look-out" onclick="window.location.href='detail.html'" />
             </div>
         </div>
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="./src/dilan.png" class="card-img-top" alt="..." onclick="window.location.href='detail.html'">
+                        <img src="./src/dilan.png" class="card-img-top" alt="..."
+                            onclick="window.location.href='detail.html'">
                         <div class="card-body">
                             <h5 class="card-title">Dilan 1990</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, earum.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+                                earum.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="./src/poordad.jpg" class="card-img-top" alt="..." onclick="window.location.href='detail.html'">
+                        <img src="./src/poordad.jpg" class="card-img-top" alt="..."
+                            onclick="window.location.href='detail.html'">
                         <div class="card-body">
                             <h5 class="card-title">Poor dad & rich Dad</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, consequuntur.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                                consequuntur.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="./src/Laskar_pelangi_sampul.jpg" class="card-img-top" alt="..." onclick="window.location.href='detail.html'">
+                        <img src="./src/Laskar_pelangi_sampul.jpg" class="card-img-top" alt="..."
+                            onclick="window.location.href='detail.html'">
                         <div class="card-body">
                             <h5 class="card-title">Laskar Pelangi</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, esse.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, esse.
+                            </p>
                         </div>
                     </div>
                 </div>
