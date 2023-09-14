@@ -62,26 +62,28 @@
                                 <h5>Library</h5>
                             </div>
                         </ul>
-
                     </div>
                 </div>
             </div>
         </nav>
+
         <!-- sidebar -->
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
             id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="isisidebar" style="display: flex; ">
+            <div >
                 
-                <div class="offcanvas-body">
+                <div class="offcanvas-body" >
                     <img src="./src/niki.png" alt="niki">
-                    <h4>Nicky Zefanya</h4>
+                    <h4>Niki Zefanya</h4>
                 </div>
-                <div>
+                <div >
                     <!-- <a >Edit</a> -->
-                    <a type="button" class="topedit" data-bs-target="#myModaladd" data-bs-toggle="modal">Add Book</a>
+                    <a class="isisidebar" href="">Explore</a>
+                    <a class="isisidebar" href="">History</a>
+                    <a class="isisidebar" type="button" class="topedit" data-bs-target="#myModaladd" data-bs-toggle="modal">Add Book</a>
                 </div>
             </div>
         </div>
@@ -93,7 +95,7 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">Edit Data</h4>
+                        <h4 class="modal-title">Add Data</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
@@ -101,16 +103,16 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="imagemodal">Image </label>
-                            <input class="modal-input" type="url" placeholder="http://gambardilan.png">
+                            <input class="modal-input" type="url" placeholder="url image..">
                         </div>
                         <div class="form-group">
                             <label for="titlemodal">Title </label>
-                            <input class="modal-input" type="text" placeholder="Dilan 1990">
+                            <input class="modal-input" type="text" placeholder="Title...">
                         </div>
                         <div class="form-group">
                             <label for="descmodal">Description </label>
                             <textarea class="modal-input " id="validationTextarea"
-                                placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."></textarea>
+                                placeholder="Description.."></textarea>
                         </div>
                     </div>
 
