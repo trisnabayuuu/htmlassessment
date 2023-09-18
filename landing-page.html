@@ -73,34 +73,34 @@
             <div class="offcanvas-header">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div >
-                
-                <div class="offcanvas-body" >
+            <div>
+
+                <div class="offcanvas-body">
                     <img src="./src/niki.png" alt="niki">
                     <h4>Niki Zefanya</h4>
                 </div>
-                <div >
+                <div>
                     <!-- <a >Edit</a> -->
                     <a class="isisidebar" href="">Explore</a>
                     <a class="isisidebar" href="">History</a>
-                    <a class="isisidebar" type="button" class="topedit" data-bs-target="#myModaladd" data-bs-toggle="modal">Add Book</a>
+                    <button class="btn topedit" id="showModalButton">Add Book</button>
                 </div>
             </div>
         </div>
 
         <!-- The Modal add -->
-        <div class="modal" id="myModaladd">
+        <!-- <div class="modal" id="myModaladd">
             <div class="modal-dialog">
                 <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
+                    Modal Header -->
+        <!-- <div class="modal-header">
                         <h4 class="modal-title">Add Data</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
+                    </div> -->
 
-                    <!-- Modal body -->
-                    <div class="modal-body">
+        <!-- Modal body -->
+        <!-- <div class="modal-body">
                         <div class="form-group">
                             <label for="imagemodal">Image </label>
                             <input class="modal-input" type="url" placeholder="url image..">
@@ -113,15 +113,15 @@
                             <label for="descmodal">Description </label>
                             <textarea class="modal-input " id="validationTextarea"
                                 placeholder="Description.."></textarea>
-                        </div>
-                    </div>
+                        </div> -->
+        <!-- </div> -->
 
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
+        <!-- Modal footer -->
+        <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-warning" data-bs-dismiss="modal">add</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
 
@@ -184,6 +184,42 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"></script>
+
+        <script>
+            document.addEventListener('click', function () {
+                const showModalButton = document.getElementById('showModalButton');
+
+                showModalButton.addEventListener('click', function () {
+                    const modalHTML = `
+                            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Add Data</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label for="bookTitle">Title</label>
+                                                <input type="text" class="form-control" id="bookTitle" placeholder="Enter book title">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    const modalFragment = document.createRange().createContextualFragment(modalHTML);
+                    const modalContainer = modalFragment.querySelector('.modal');
+                    document.body.appendChild(modalContainer);
+
+                    const modal = new bootstrap.Modal(modalContainer);
+                    modal.show();
+                });
+            });
+        </script>
 </body>
 
 </html>
