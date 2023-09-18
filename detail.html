@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -8,193 +9,138 @@
     <link rel="stylesheet" href="./css/style-detail.css" />
     <link rel="stylesheet" href="./css/mobile-detail.css" />
     <!-- Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
 
-  <body>
+<body>
     <main class="detailcontainer">
-      <section class="top">
-        <div class="topbutton">
-          <input
-            style="width: 50px; height: 50px"
-            type="image"
-            src="./src/Back Button.png"
-            alt="Tombol Gambar"
-            onclick="window.location.href='landing-page.html'"
-          />
-        </div>
+        <section class="top">
+            <div class="topbutton">
+                <input style="width: 50px; height: 50px" type="image" src="./src/Back Button.png" alt="Tombol Gambar"
+                    onclick="window.location.href='landing-page.html'" />
+            </div>
 
-        <div class="topmodal">
-          <a
-            type="button"
-            class="topedit"
-            data-bs-target="#myModaledit"
-            data-bs-toggle="modal"
-            >Edit</a
-          >
-          <a
-            class="topdelete"
-            type="button"
-            data-bs-target="#myModaldelete"
-            data-bs-toggle="modal"
-            >Delete</a
-          >
-        </div>
-      </section>
-      <section class="bottom">
-        <div class="bottomtitle">
-          <!-- <div>
+            <div class="topmodal">
+                <a type="button" class="topedit" data-bs-target="#myModaledit" data-bs-toggle="modal">Edit</a>
+                <a class="topdelete" type="button" data-bs-target="#myModaldelete" data-bs-toggle="modal">Delete</a>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="bottomtitle">
+                <!-- <div>
                 </div> -->
-          <!-- cover -->
-          <div>
-            <button type="button" class="btn btn-warning">Novel</button>
-            <h1>DILAN 1990</h1>
-            <h6>30 juni 2019</h6>
-          </div>
-          <div class="stock">
-            <h5>Available</h5>
-          </div>
-        </div>
-        <div class="detailisi">
-          <div class="paragrafdilan">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium odio asperiores aperiam minus id deleniti blanditiis
-              quidem, quisquam quos placeat in sed dolorem distinctio qui ab
-              magnam excepturi perferendis voluptatem. Quasi nobis cumque non
-              iste dicta dolores voluptatem maxime in. Libero nam obcaecati
-              nesciunt odit molestiae! Voluptatum quaerat assumenda officiis
-              inventore nihil? Quod architecto dolorem nulla itaque laborum vel
-              deleniti quas placeat amet quisquam eos, voluptatum non ullam.
-              Suscipit laborum unde repellat. Dicta alias dolores explicabo
-              molestiae esse placeat molestias unde eligendi temporibus aliquid
-              magnam quos cum, velit id debitis. Quia atque nisi voluptatibus,
-              itaque recusandae maiores rerum accusantium error.
-            </p>
-          </div>
-          <div class="buttonborrow">
-            <button
-              type="button"
-              class="btn btn-warning"
-              data-bs-toggle="modal"
-              data-bs-target="#myModalborrow"
-            >
-              Borrow
-            </button>
-          </div>
-        </div>
-        <!-- modal delete -->
-        <div class="modal" id="myModaldelete">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Edit Data</h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <div
-                  class="imgdelete"
-                  style="display: flex; justify-content: center"
-                >
-                  <img src="./src/checked.png" alt="checked" />
+                <!-- cover -->
+                <div>
+                    <button type="button" class="btn btn-warning">Novel</button>
+                    <h1>DILAN 1990</h1>
+                    <h6>30 juni 2019</h6>
                 </div>
-                <div
-                  class="textdelete"
-                  style="display: flex; justify-content: center"
-                >
-                  <h6>Data Dilan 1990 berhasil dihapus</h6>
+                <div class="stock">
+                    <h5>Available</h5>
                 </div>
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <!-- <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Edit</button> -->
-              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- The Modal edit -->
-        <div class="modal" id="myModaledit">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Edit Data</h4>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <div class="form-group">
-                  <label for="imagemodal">Image </label>
-                  <input
-                    class="modal-input"
-                    type="url"
-                    placeholder="http://gambardilan.png"
-                  />
+            <div class="detailisi">
+                <div class="paragrafdilan">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laudantium odio asperiores aperiam minus id deleniti blanditiis
+                        quidem, quisquam quos placeat in sed dolorem distinctio qui ab
+                        magnam excepturi perferendis voluptatem. Quasi nobis cumque non
+                        iste dicta dolores voluptatem maxime in. Libero nam obcaecati
+                        nesciunt odit molestiae! Voluptatum quaerat assumenda officiis
+                        inventore nihil? Quod architecto dolorem nulla itaque laborum vel
+                        deleniti quas placeat amet quisquam eos, voluptatum non ullam.
+                        Suscipit laborum unde repellat. Dicta alias dolores explicabo
+                        molestiae esse placeat molestias unde eligendi temporibus aliquid
+                        magnam quos cum, velit id debitis. Quia atque nisi voluptatibus,
+                        itaque recusandae maiores rerum accusantium error.
+                    </p>
                 </div>
-                <div class="form-group">
-                  <label for="titlemodal">Title </label>
-                  <input
-                    class="modal-input"
-                    type="text"
-                    placeholder="Dilan 1990"
-                  />
+                <div class="buttonborrow">
+                    <button class="btn btn-warning" id="showModalButton">borrow</button>
+                    <!-- <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                        data-bs-target="#myModalborrow">
+                        Borrow
+                    </button> -->
                 </div>
-                <div class="form-group">
-                  <label for="descmodal">Description </label>
-                  <textarea
-                    class="modal-input"
-                    id="validationTextarea"
-                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                  ></textarea>
-                </div>
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-warning"
-                  data-bs-dismiss="modal"
-                >
-                  Edit
-                </button>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+            <!-- modal delete -->
+            <div class="modal" id="myModaldelete">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Edit Data</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="imgdelete" style="display: flex; justify-content: center">
+                                <img src="./src/checked.png" alt="checked" />
+                            </div>
+                            <div class="textdelete" style="display: flex; justify-content: center">
+                                <h6>Data Dilan 1990 berhasil dihapus</h6>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Edit</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal edit -->
+            <div class="modal" id="myModaledit">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Edit Data</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="imagemodal">Image </label>
+                                <input class="modal-input" type="url" placeholder="http://gambardilan.png" />
+                            </div>
+                            <div class="form-group">
+                                <label for="titlemodal">Title </label>
+                                <input class="modal-input" type="text" placeholder="Dilan 1990" />
+                            </div>
+                            <div class="form-group">
+                                <label for="descmodal">Description </label>
+                                <textarea class="modal-input" id="validationTextarea"
+                                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script>
-      // modal borrow
+        // modal borrow
         document.addEventListener("click", function () {
-        const showModalButton = document.getElementById("showModalButton");
+            const showModalButton = document.getElementById("showModalButton");
 
-        showModalButton.addEventListener("click", function () {
-            const modalHTML = `
+            showModalButton.addEventListener("click", function () {
+                const modalHTML = `
             <div class="modal" id="myModalborrow">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -223,16 +169,17 @@
                 </div>
             </div>
                         `;
-            const modalFragment = document
-            .createRange()
-            .createContextualFragment(modalHTML);
-            const modalContainer = modalFragment.querySelector(".modal");
-            document.body.appendChild(modalContainer);
+                const modalFragment = document
+                    .createRange()
+                    .createContextualFragment(modalHTML);
+                const modalContainer = modalFragment.querySelector(".modal");
+                document.body.appendChild(modalContainer);
 
-            const modal = new bootstrap.Modal(modalContainer);
-            modal.show();
+                const modal = new bootstrap.Modal(modalContainer);
+                modal.show();
+            });
         });
-    });
     </script>
 </body>
+
 </html>
